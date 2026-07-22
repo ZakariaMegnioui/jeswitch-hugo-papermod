@@ -1,6 +1,6 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "echo 'Using pre-built public folder'"
   publish = "public"
 
-[functions]
-  directory = "netlify/functions"
+[build.environment]
+  HUGO_VERSION = "0.147.0"
